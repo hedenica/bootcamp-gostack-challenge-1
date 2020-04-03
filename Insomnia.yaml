@@ -1,0 +1,161 @@
+_type: export
+__export_format: 4
+__export_date: 2020-04-03T16:39:32.045Z
+__export_source: insomnia.desktop.app:v7.1.1
+resources:
+  - _id: req_8205ebade5434141b2a67668a7164331
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+          "id": "5", 
+          "title": "Novo Projeto", 
+          "tasks": []
+          }
+    created: 1585882829134
+    description: ""
+    headers:
+      - id: pair_bfa2f1b774624bf0a87213785d7355bb
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1585882829135
+    method: POST
+    modified: 1585931886037
+    name: Cadastrar Projetos
+    parameters: []
+    parentId: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3000/projects
+    _type: request
+  - _id: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    created: 1585882780798
+    description: ""
+    modified: 1585882780798
+    name: desafio-gostack-01
+    parentId: null
+    _type: workspace
+  - _id: req_cf1e1fc7651740fe92f4b97b43375306
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+        	"title": "Nova Tarefa"
+          }
+    created: 1585926451910
+    description: ""
+    headers:
+      - id: pair_bfa2f1b774624bf0a87213785d7355bb
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1585771865494.75
+    method: POST
+    modified: 1585931925005
+    name: Cadastrar Tarefas
+    parameters: []
+    parentId: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3000/projects/5/tasks
+    _type: request
+  - _id: req_133a2753d9a646f28f024b565072cacd
+    authentication: {}
+    body: {}
+    created: 1585883890169
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1585660901854.5
+    method: GET
+    modified: 1585884034971
+    name: Listar Projetos
+    parameters: []
+    parentId: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3000/projects
+    _type: request
+  - _id: req_5ecf3fb6176f4742bbf90d00fd000595
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-2
+         {
+          "title": "Conceitos NodeJS"
+         }
+    created: 1585885257238
+    description: ""
+    headers:
+      - id: pair_94961ecffb05497b9492359c4985895f
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1585549938214.25
+    method: PUT
+    modified: 1585931941339
+    name: Editar Titulo Projeto
+    parameters: []
+    parentId: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3000/projects/2
+    _type: request
+  - _id: req_f758abacf66e4eceae86ca79093d8d9d
+    authentication: {}
+    body: {}
+    created: 1585886587055
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1585494456394.125
+    method: DELETE
+    modified: 1585930541484
+    name: Deletar Projeto
+    parameters: []
+    parentId: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3000/projects/1
+    _type: request
+  - _id: env_336cc9a962db93569b0815b7262acf13b5c9b2cf
+    color: null
+    created: 1585882781097
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1585882781097
+    modified: 1585882781097
+    name: Base Environment
+    parentId: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    _type: environment
+  - _id: jar_336cc9a962db93569b0815b7262acf13b5c9b2cf
+    cookies: []
+    created: 1585882781108
+    modified: 1585882781108
+    name: Default Jar
+    parentId: wrk_aa5d414e3bce4588be8962bb087a1cb0
+    _type: cookie_jar
